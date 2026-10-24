@@ -10,3 +10,4 @@ public/audits/*
 !data/audits/.gitkeep
 !data/browser-profile/.gitkeep
 !public/audits/.gitkeep
+*.tsbuildinfo
