@@ -6,6 +6,7 @@
 ![License](https://img.shields.io/badge/license-MIT-8AB6D6)
 ![Stack](https://img.shields.io/badge/stack-Next.js%2015%20%7C%20Playwright%20%7C%20TypeScript-333333)
 ![RAM Safe](https://img.shields.io/badge/Low--RAM%20Optimized-4GB--8GB%20Ready-22C55E)
+![PR Standard](https://img.shields.io/badge/PR%20Standard-Matt%20Pocock%20Visual-8AB6D6)
 
 ---
 
@@ -160,6 +161,31 @@ Need a quick DOM telemetry check without starting the local server? Open any web
   console.log('UI/UX Telemetry:', res);
   return res;
 })();
+```
+
+---
+
+## Pull Request Standard (Matt Pocock Standard)
+
+All contributions and PRs in this project enforce **Matt Pocock's High-Signal, Visual Engineering PR Standard**. Pull requests must skip prose preambles in favor of visual architecture, concrete evidence, and explicit door classification.
+
+See [.github/pull_request_template.md](.github/pull_request_template.md) and [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines.
+
+### Standard PR Format:
+```markdown
+## Summary
+
+<diagram, diff-sketch, component tree, call tree, or shallow file tree>
+
+## Evidence
+
+- **Before:** <screenshot / failing test run / prior CLI output>
+- **After:** <screenshot / passing test run / new CLI output>
+
+## Merge Danger
+
+**Door:** <one-way or two-way>
+**Blast Radius:** <Isolated | Leaf Component | API Route | Crawler / Browser Core | System-wide>
 ```
 
 ---
